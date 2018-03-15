@@ -16,10 +16,11 @@ Created with angular-cli and 500px api.
 
 This is just to help me track
 
-* X Test on Mac and Windows write readme setup
-* X Search input for tag
-* X Photo results displayed
-* X No results should indicate why
-* X Photo grid is responsive
-* X Sticky header with simple text logo on right and dropdown menu on left
-* X Write one test
+* Test on Mac and Windows write readme setup
+* Setup API call to 500px
+* Search input for tag
+* Photo results displayed
+* No results should indicate why
+* Photo grid is responsive
+* Sticky header with simple text logo on right and dropdown menu on left
+* Write one test
