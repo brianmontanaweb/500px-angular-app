@@ -1,3 +1,4 @@
 <div>
-  <app-photo *ngFor="let photo of photos"></app-photo>
+  <app-photo class="photo__container" *ngIf="photos.length; else noSearch" [photos]="photos"></app-photo>
+  <ng-template #noSearch>Sorry no results</ng-template>
 </div>

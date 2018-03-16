@@ -1,1 +1,1 @@
-<img [src]="src" />
+<img *ngFor="let photo of photos"  [src]="photo.image_url[0]" />

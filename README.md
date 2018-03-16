@@ -19,8 +19,8 @@ This is just to help me track
 * Test on Mac and Windows write readme setup
 * Setup API call to 500px
 * Search input for tag
-* Photo results displayed
-* No results should indicate why
-* Photo grid is responsive
+* X Photo results displayed
+* X No results should indicate why
+* X Photo grid is responsive
 * Sticky header with simple text logo on right and dropdown menu on left
 * Write one test

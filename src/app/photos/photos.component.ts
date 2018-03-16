@@ -1,16 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Photo, Api500pxService} from '../shared';
 
 @Component({
   selector: 'app-photos',
   templateUrl: './photos.component.html',
-  styleUrls: ['./photos.component.css']
+  styleUrls: ['./photos.component.scss']
 })
 export class PhotosComponent implements OnInit {
-  photos = [1, 2, 3, 4];
+  photos = [];
 
-  constructor() { }
+  constructor(private api500pxService: Api500pxService) {
+  }
 
   ngOnInit() {
+    this.photos = this.api500pxService.photos;
   }
 
 }
