@@ -1,4 +1,4 @@
 <div>
-  <app-photo class="photo__container" *ngIf="photos.length; else noSearch" [photos]="photos"></app-photo>
-  <ng-template #noSearch>Sorry no results</ng-template>
+  <app-photo class="photo__container" *ngIf="photos.length; else noResults" [photos]="photos"></app-photo>
+  <ng-template #noResults>Sorry no results</ng-template>
 </div>

@@ -8,6 +8,10 @@ import { Photo } from '../../shared';
 })
 export class PhotoComponent {
 
+  photoImage = image => {
+    return `url(${image})`;
+  };
+
   @Input() photos: Photo[];
 
   constructor() { }

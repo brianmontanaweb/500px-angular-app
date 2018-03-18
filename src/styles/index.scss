@@ -1,0 +1,23 @@
+/* Any empty file is just to reserve the folder and it's referencing my architecture for SCSS/CSS */
+
+/* Settings for variables */
+@import "settings/variables";
+
+/* Tools for functions, mixins, helpers, etc */
+@import "tools/functions";
+@import "tools/mixins";
+@import "tools/helpers";
+
+/* Vendors */
+@import "vendors/normalize";
+
+/* Base */
+@import "base/base";
+@import "base/typography";
+@import "base/layout";
+
+/* Animations */
+@import "animation/animation";
+
+/* Overrides */
+@import "overrides/interactive";
