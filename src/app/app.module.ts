@@ -7,6 +7,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { PhotoComponent } from './photos/photo/photo.component';
 import { Api500pxService } from './shared';
 import { SearchComponent } from './search/search.component';
+import { StickyMenuComponent } from './sticky-menu/sticky-menu.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SearchComponent } from './search/search.component';
     AppComponent,
     PhotosComponent,
     PhotoComponent,
-    SearchComponent
+    SearchComponent,
+    StickyMenuComponent
   ],
   imports: [
     BrowserModule
