@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PhotosComponent } from './photos/photos.component';
@@ -17,12 +17,15 @@ import { RadioComponent } from './radio/radio.component';
     PhotoComponent,
     SearchComponent,
     StickyMenuComponent,
-    RadioComponent,
+    RadioComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [Api500pxService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
+  ]
 })
 export class AppModule { }

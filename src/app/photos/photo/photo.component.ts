@@ -7,9 +7,7 @@ import { Photo } from '../../shared';
   styleUrls: ['./photo.component.scss']
 })
 export class PhotoComponent {
-
-  @Input() photos: Photo[];
+  @Input() photo: Photo;
 
   constructor() { }
-
 }

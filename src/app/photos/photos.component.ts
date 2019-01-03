@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {Photo, Api500pxService} from '../shared';
 
 @Component({
@@ -7,7 +7,7 @@ import {Photo, Api500pxService} from '../shared';
   styleUrls: ['./photos.component.scss']
 })
 export class PhotosComponent implements OnInit {
-  photos = [];
+  photos: Photo[];
 
   constructor(private api500pxService: Api500pxService) {
   }
@@ -15,5 +15,4 @@ export class PhotosComponent implements OnInit {
   ngOnInit() {
     this.photos = this.api500pxService.photos;
   }
-
 }

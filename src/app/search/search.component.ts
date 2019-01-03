@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-search',
@@ -6,11 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent {
-  searchTag: string = '';
+  @Input() handleSearchTag: Function;
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }
