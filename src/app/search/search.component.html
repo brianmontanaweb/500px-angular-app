@@ -1,1 +1,10 @@
-<input type="text" placeholder="Search" name="search">
+<form class="search-form">
+  <label for="search500px" class="search-form__label">Search for your favorite animal...</label>
+  <input
+    id="search500px"
+    (change)="handleSearchTag"
+    type="text"
+    placeholder="Search"
+    class="search-form__input"/>
+  <button type='submit' class="search-form__btn">Search</button>
+</form>
