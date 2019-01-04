@@ -1,9 +1,0 @@
-<label [for]="id">
-  <input type="radio" [id]="id" [name]="name">
-  <span *ngIf="!content.length; else noContent">
-    <ng-content></ng-content>
-  </span>
-  <ng-template #noContent let-content="content">{{content}}</ng-template>
-  <ng-container *ngTemplateOutlet="noContent;context:{content:content}"></ng-container>
-</label>
-<br>

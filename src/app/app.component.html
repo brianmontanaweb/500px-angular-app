@@ -1,5 +1,6 @@
 <app-sticky-menu></app-sticky-menu>
 
-<app-search></app-search>
+<app-search [handleSearchTag]="handleSearchTag"></app-search>
 
-<app-photos class="photo__container"></app-photos>
+<app-photos class="photo__container"
+            [photos]="photos"></app-photos>

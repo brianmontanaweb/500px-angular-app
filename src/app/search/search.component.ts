@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Api500pxService} from '../shared';
 
 @Component({
   selector: 'app-search',
@@ -7,6 +8,22 @@ import { Component, Input } from '@angular/core';
 })
 export class SearchComponent {
   @Input() handleSearchTag: Function;
+  breeds: string[];
 
-  constructor() { }
+  constructor(private api500pxService: Api500pxService) {
+    fetch(this.api500pxService.DogBreeds())
+      .then(res => res.json())
+      .then(resJson => {
+        const breedsObj = resJson.message;
+        const breeds = Object.keys(breedsObj);
+
+        for (const key in breedsObj) {
+          if (breedsObj[key].length) {
+            breedsObj[key].map(el => `${key}-${el}`).forEach(el => breeds.push(el));
+          }
+        }
+
+        this.breeds = breeds;
+      });
+    }
 }

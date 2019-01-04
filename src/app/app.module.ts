@@ -7,8 +7,6 @@ import { PhotoComponent } from './photos/photo/photo.component';
 import { Api500pxService } from './shared';
 import { SearchComponent } from './search/search.component';
 import { StickyMenuComponent } from './sticky-menu/sticky-menu.component';
-import { RadioComponent } from './radio/radio.component';
-
 
 @NgModule({
   declarations: [
@@ -17,10 +15,9 @@ import { RadioComponent } from './radio/radio.component';
     PhotoComponent,
     SearchComponent,
     StickyMenuComponent,
-    RadioComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [Api500pxService],
   bootstrap: [AppComponent],

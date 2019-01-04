@@ -7,12 +7,10 @@ import {Photo, Api500pxService} from '../shared';
   styleUrls: ['./photos.component.scss']
 })
 export class PhotosComponent implements OnInit {
-  photos: Photo[];
+  @Input() photos: string[];
 
   constructor(private api500pxService: Api500pxService) {
   }
 
-  ngOnInit() {
-    this.photos = this.api500pxService.photos;
-  }
+  ngOnInit() {  }
 }
