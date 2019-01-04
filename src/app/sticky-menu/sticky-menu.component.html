@@ -1,6 +1,8 @@
-<div class="sticky-menu">
+<div class="sticky-menu"
+     [ngClass]="{'sticky-menu--open': activeMenu}">
   <h1 class="sticky-menu__logo">Logo</h1>
-  <span class="sticky-menu__toggle">Menu</span>
+  <span class="sticky-menu__toggle"
+        (click)="stickyToggle()">Menu</span>
   <ul class="sticky-menu__list">
     <li>
       <a href="#" class="sticky-menu__link">Favorites</a>
